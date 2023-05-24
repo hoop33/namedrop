@@ -1,18 +1,19 @@
-use rand::prelude::*;
+use std::error::Error;
+use clap::Parser;
+use namedrop::NameDrop;
 
-fn get_random(list: &str) -> &str {
-    let mut rng = rand::thread_rng();
-    let mut lines = list.lines();
-    let index = rng.gen_range(0..lines.clone().count());
-    lines.nth(index).unwrap()
+/// A name dropper -- generates random names in <adjective noun> format
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    /// Number of names to drop
+    #[arg(short, long, default_value_t = 1)]
+    count: u8,
 }
 
-fn main() {
-    let nouns = include_str!("../generated/nouns.txt");
-    let adjectives = include_str!("../generated/adjectives.txt");
+fn main() -> Result<(), Box<dyn Error>> {
+    let args = Args::parse();
 
-    let noun = get_random(nouns);
-    let adjective = get_random(adjectives);
-
-    println!("{} {}", adjective, noun);
+    let name_drop = NameDrop::new();
+    name_drop.run(args.count)
 }

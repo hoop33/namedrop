@@ -27,6 +27,8 @@ $ namedrop
 
 ## Examples
 
+### Generate one name at a time
+
 ```console
 $ namedrop
 pseudoasymmetrical counterpoint
@@ -36,6 +38,22 @@ clammy Sackville
 
 $ namedrop
 unriskable sterilisability
+```
+
+### Generate multiple names
+
+```console
+$ namedrop --count 10
+awakenable Lindybeth
+subglobular Boussingault
+uncloudy Agen
+ungentle nitrification
+Sundaylike biguanide
+preservative misfortune
+nonpsychoanalytic Babylonian
+uncommemorative nonconcurrence
+self-committing compositor
+compulsory replay
 ```
 
 ## Credits
