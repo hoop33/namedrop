@@ -1,6 +1,6 @@
 # NameDrop
 
-> A utility for generating random names in the format <adjective noun>.
+> A utility for generating random names in the format &lt;adjective noun&gt;.
 
 ## Getting Started
 
@@ -45,4 +45,4 @@ The word list comes from the [Moby Project](https://en.wikipedia.org/wiki/Moby_P
 ## License
 
 Copyright &copy; 2023 Rob Warner
-Licensed under the [MIT License](https://hoop33.mit-license.org/)
+Licensed under the [MIT License](https://hoop33.mit-license.org/).
