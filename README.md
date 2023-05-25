@@ -62,5 +62,5 @@ The word list comes from the [Moby Project](https://en.wikipedia.org/wiki/Moby_P
 
 ## License
 
-Copyright &copy; 2023 Rob Warner
+Copyright &copy; 2023 Rob Warner.
 Licensed under the [MIT License](https://hoop33.mit-license.org/).
