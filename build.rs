@@ -24,7 +24,7 @@ fn generate_words() {
             if let Ok(ip) = line {
                 let parts: Vec<&str> = ip.split("\\").collect();
                 if parts.len() == 2 {
-                    if parts[1].contains("N") && parts[1].chars().next().unwrap().is_lowercase() {
+                    if parts[1].contains("N") && parts[0].chars().next().unwrap().is_lowercase() {
                         nouns.push(parts[0].to_string());
                     }
 
